@@ -1,0 +1,42 @@
+Vetores:
+
+Quando vários números guardados, e preciso achar um em específico, ou um maior. Um sorteio, por exemplo, onde existem vários números guardados e digita-se um em espefícico para ver se ele está contido no vetor ou não.
+
+ex:
+
+int n;
+	cout<<"Digite o tamanho do vetor: ";
+	cin>>n; cout<<endl;
+	int x[n];
+	int p;
+	
+	for (int i=0; i<n; i++){
+		cout<<"Informe o valor da posicao "<<i+1<<":";
+		cin>>x[i];
+	}
+	cout<<endl;
+	cout<<"Digite qual numero esta procurando: ";
+	cin>>p;
+	
+	for (int i=0; i<n; i++){
+		if (p==x[i]){
+			cout<<p<<" Encontrado na posicao ["<<i+1<<"]"<<endl;
+			break;
+		}
+		else
+			continue;
+	}
+
+
+
+Matrizes:
+
+Uma matriz contendo as notas das 3 unidades de uma diciplina, assim, cada linha com o numero da matricula de um aluno e suas respectivas notas.
+
+ex: 
+int matricula;
+cin>>matricula;
+int notas[matricula][4];
+for (int i=0; i<matricula; i++)
+	for (int j=0; j<4; j++){
+		cin>>notas[i][j];
